@@ -1,0 +1,38 @@
+{
+    "name": "立一个Flag",
+    "description": "task manager",
+    "version": "1.0",
+    "manifest_version": 2,
+
+
+    "permissions": [
+        "storage"
+    ],
+
+    "background":{
+        "scripts":["eventPage.js", "popup2.html"],
+        "persistent":false
+    },
+
+    "browser_action":{
+    	"default_popup": "popup2.html",
+    	"default_icon": {
+            "16": "images/flag1.png",
+            "24": "images/flag2.png",
+            "32": "images/flag3.png",
+            "64": "images/flag4.png"
+        },
+        "default_title":"立一个Flag"
+    },
+
+
+    "commands":{
+    	"_execute_browser_action":{
+    		"suggested_key":{
+    			"default":"Ctrl+Shift+F",
+    			"mac":"MacCtrl+Shift+F"
+    		},
+    		"description":"Opens hello.html" 
+    	}
+    }
+}
