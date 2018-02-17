@@ -22,9 +22,14 @@ function printItems(){
 	for(var key in window.object){
 		var content = document.getElementById("data");
 	 	var text = document.createTextNode(object[key]);
+    var button = document.createElement("button");
+    button. innerHTML = "finish";
+    button.id = key;
+    button.class = "finish";
 	 	var para = document.createElement("p");
 	 	para.appendChild(text);
 	 	content.appendChild(para);	
+    content.appendChild(button);
 	}
 	
  }
@@ -55,13 +60,19 @@ document.getElementById("add").onclick = function(){
  }
 
 
+document.getElementByClassName("finish").onclick = function(){
+    
+ }
+
+document.getElementById("clear").onclick = function(){
+    clear();
+ }
+
 document.body.onload = function(){
   init();
-  // printItems();
 }
 
 chrome.storage.onChanged.addListener(function(changes, namespace) {
-  // clear();
   for (key in changes) {
     var storageChange = changes[key];
     console.log('Storage key "%s" in namespace "%s" changed. ' +
@@ -73,9 +84,12 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
   }
 });
 
-function clear(){
-	chrome.storage.sync.clear();
-}
+  function clear(){
+  	chrome.storage.sync.clear(function(){
+    init();
+  });
+  }
+
 
 
 // printItems();
