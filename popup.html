@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <style>
+
+    /*To disable the input highlight when focus.*/
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+  	/*Define the size of the body*/
+  	body{
+  		margin:0px;
+  		width : 200px;
+  		font-family: "Andale Mono", AndaleMono, monospace;
+  		font-size:14px;
+  	}
+
+    /*Remove text input area border*/
+    input{
+      border: none;
+      border-color: transparent;  
+    }
+    
+
+    #text{
+      width:80px;
+      height:100%;
+    }
+    #add{
+      background-image: url("images/plus2.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height:24px;
+      width:24px;
+    }
+
+  	/**/
+  	.class_clear_task_button{
+  		background-image: url("images/flag2.png");
+  		background-repeat: no-repeat;
+  		background-position: 50% 50%;
+  		/* put the height and width of your image here */
+		  height: 24px;
+	    width: 24px;
+	    border: none;
+  	}
+
+    #div_add_task{
+      border-style: solid;
+      border-width: 4px;
+      border-color: #EFEFEF;
+      height:30px;
+      margin-bottom:10px;  
+      /*background-color: red;*/
+    }
+
+    #div_clear{
+      border-style: solid;
+      border-width: 4px;
+      border-color: #EFEFEF;  
+      background-color: red;
+    }
+
+  	#id_entry{
+      border-style: solid;
+  		border-width: 4px;
+  		border-color: #EFEFEF;
+  	}
+  	#id_text {
+  		display:inline-block;
+  		margin-right:20px; 
+  		width:120px; 
+  		/*background-color:red;*/
+  	}
+
+  	#id_button{
+  		margin-left:0px;
+  		display:inline-block;
+  		margin-right:0px; 
+  		width:25px; 
+  		/*background-color:red;*/
+  	}
+
+    #div_add_button{
+      margin-left:0px;
+      display:inline-block;
+      margin-right:0px; 
+      width:25px; 
+    }
+    #div_input{
+      display:inline-block;
+      margin-right:20px; 
+      width:120px; 
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div >
+    	<div id = "div_add_task">
+          <div id = "div_input">
+              <input type="text" id="text"></input>
+          </div>
+    	  	<div id = "div_add_button">
+    	  	    <button id="add"></button>
+          </div>	  	
+    	</div>
+      <div id = "div_clear">
+          <button id="clear">clear</button>
+      </div>
+    	<div id="data"></div>
+  </div>
+  
+  <script src = "eventPage.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</body>
+</html>

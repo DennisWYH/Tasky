@@ -10,12 +10,12 @@
     ],
 
     "background":{
-        "scripts":["eventPage.js", "popup2.html"],
+        "scripts":["eventPage.js", "popup.html"],
         "persistent":false
     },
 
     "browser_action":{
-    	"default_popup": "popup2.html",
+    	"default_popup": "popup.html",
     	"default_icon": {
             "16": "images/flag1.png",
             "24": "images/flag2.png",
