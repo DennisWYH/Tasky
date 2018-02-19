@@ -9,10 +9,8 @@ var value;
 
 function init(){
 	chrome.storage.sync.get(null,function(items){
-		object = items;
-		for(var key in object){
-		};
-    printItems();		
+		window.object = items;
+        printItems();		
 	});
 }
 
@@ -61,8 +59,12 @@ function printItems(){
  }
 
  function clear_a_task(value){
-  delete window.object[value];
-  printItems();
+        delete window.object[value];
+        console.log(value + object[value]);
+        chrome.storage.sync.remove(value.toString(), function() {
+            // Notify that we saved.
+            printItems();
+        });
  }
  
 function add() {
@@ -79,8 +81,7 @@ function add() {
         object[key] = theValue;
         // Store object to Chrome.storage
         chrome.storage.sync.set(object, function() {
-          // Notify that we saved.
-        	// alert(object);
+            // Notify that we saved.
         	printItems();
         });
         
