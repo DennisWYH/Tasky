@@ -1,7 +1,7 @@
 {
     "name": "立一个Flag",
     "description": "task manager",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
 
 
@@ -10,7 +10,7 @@
     ],
 
     "background":{
-        "scripts":["eventPage.js", "popup.html"],
+        "scripts":["js/eventPage.js", "popup.html"],
         "persistent":false
     },
 
