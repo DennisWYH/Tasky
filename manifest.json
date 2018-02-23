@@ -1,9 +1,10 @@
 {
-    "name": "立一个Flag",
-    "description": "task manager",
-    "version": "1.1",
+    "name": "Stand a flag",
+    "description": "Manage your long term tasks.",
+    "version": "1.2.2",
     "manifest_version": 2,
-
+    "author": "Yunhai",
+    "short_name": "flag",
 
     "permissions": [
         "storage"
@@ -22,7 +23,7 @@
             "32": "images/flag3.png",
             "64": "images/flag4.png"
         },
-        "default_title":"立一个Flag"
+        "default_title":"Stand a flag"
     },
 
 

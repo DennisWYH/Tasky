@@ -16,7 +16,7 @@ function init(){
 
 
 function printItems(){
-	document.getElementById("data").innerHTML = "";
+	$("#data").html("");
 	for(var key in window.object){
 		var content = document.getElementById("data");
 	 	
@@ -68,7 +68,7 @@ function printItems(){
  }
  
 function add() {
-        var theValue = document.getElementById("text").value;
+        var theValue = $("#text").val();
         // Check that there's some code there.
         if (!theValue) {
           message('Error: No value specified');
@@ -87,16 +87,16 @@ function add() {
         
 }
 
-document.getElementById("add").onclick = function(){
+$("#add").click(function(){
 	 	add();
- }
+ });
 
 
-document.getElementById("clear").onclick = function(){
+$("#clear").click(function(){
     clear();
- }
+ });
 
-document.body.onload = function(){
+window.onload = function(){
   init();
 }
 
