@@ -1,0 +1,101 @@
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+  	/*Define the size of the body*/
+  	body{
+  		margin:0px;
+  		width : 240px;
+  		font-family: "Andale Mono", AndaleMono, monospace;
+  		font-size:14px;
+  	}
+
+    /*Remove text input area border*/
+    input{
+      border: none;
+      border-color: transparent;  
+      font-family: "Andale Mono", AndaleMono, monospace;
+    }
+    
+
+    #text{
+      width:80px;
+      height:100%;
+    }
+    #add{
+      margin-top:6px;
+      background-image: url("../images/plus2.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height:16px;
+      width:16px;
+      border:none;
+    }
+
+  	/**/
+  	.class_clear_task_button{
+      margin-top:10px;
+  		background-image: url("../images/flag2.png");
+  		background-repeat: no-repeat;
+  		background-position: 50% 50%;
+  		/* put the height and width of your image here */
+		  height: 20px;
+	    width: 20px;
+	    border: none;
+  	}
+
+    #div_add_task{
+      border-style: solid;
+      border-width: 4px;
+      border-color: #EFEFEF;
+      height:30px;  
+      /*background-color: red;*/
+    }
+    #clear{
+      font-family: "Andale Mono", AndaleMono, monospace;      
+      margin-left:40%;
+      border:none;
+    }
+
+    #div_clear{
+      border-style: solid;
+      border-width: 4px;
+      border-color: #EFEFEF;  
+      /*background-color: red;*/
+    }
+
+  	#id_entry{
+      border-style: solid;
+  		border-width: 4px;
+  		border-color: #EFEFEF;
+  	}
+  	#id_text {
+      margin-left:10px;
+  		display:inline-block;
+  		margin-right:50px; 
+  		width:140px; 
+  		/*background-color:red;*/
+  	}
+
+  	#id_button{
+  		margin-left:0px;
+  		display:inline-block;
+  		margin-right:0px; 
+  		width:25px; 
+  		/*background-color:red;*/
+  	}
+
+    #div_add_button{
+      margin-left:0px;
+      display:inline-block;
+      margin-right:0px; 
+      width:25px; 
+    }
+    #div_input{
+      margin-left:6px;
+      display:inline-block;
+      margin-right:62px; 
+      width:120px; 
+    }
