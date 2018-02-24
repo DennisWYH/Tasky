@@ -1,7 +1,7 @@
 {
     "name": "Stand a flag",
     "description": "Manage your long term tasks.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "manifest_version": 2,
     "author": "Yunhai",
     "short_name": "flag",

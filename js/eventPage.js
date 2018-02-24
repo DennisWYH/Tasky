@@ -41,9 +41,9 @@ function printItems(){
     button.addEventListener('click', function(event) {clear_a_task(this.value)}, false);
     button.className = "class_clear_task_button";
     // Add javscript features to div_entry element.
-    div_text.id = "id_text";
-    div_button.id = "id_button";
-    div_entry.id = "id_entry";
+    div_text.id = "div_task_content";
+    div_button.id = "div_flag_button";
+    div_entry.id = "div_entry";
     // Arrange the sequence of all the elements.
     // Put textNode into paragraph element.
     // Put para and button into div_entry.
@@ -68,7 +68,7 @@ function printItems(){
  }
  
 function add() {
-        var theValue = $("#text").val();
+        var theValue = $("#input_box").val();
         // Check that there's some code there.
         if (!theValue) {
           message('Error: No value specified');
@@ -86,12 +86,12 @@ function add() {
         }); 
 }
 
-$("#add").click(function(){
+$("#add_task_button").click(function(){
 	 	add();
  });
 
 
-$("#clear").click(function(){
+$("#clear_all_button").click(function(){
     clear();
  });
 
