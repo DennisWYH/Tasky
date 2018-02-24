@@ -36,7 +36,7 @@
 
   	/**/
   	.class_clear_task_button{
-      margin-top:10px;
+      margin-top:2px;
   		background-image: url("../images/flag2.png");
   		background-repeat: no-repeat;
   		background-position: 50% 50%;
@@ -70,20 +70,23 @@
       border-style: solid;
   		border-width: 4px;
   		border-color: #EFEFEF;
+      /*background-color:red;*/
   	}
   	#div_task_content {
       margin-left:10px;
   		display:inline-block;
   		margin-right:0px; 
-  		width:200px; 
+  		width:240px; 
   		/*background-color:red;*/
   	}
 
   	#div_flag_button{
-  		margin-left:50px;
+      margin-top:7px;
+  		margin-left:5px;
   		display:inline-block;
   		margin-right:0px; 
   		width:25px; 
+      margin-bottom:0px;
   		/*background-color:red;*/
   	}
 

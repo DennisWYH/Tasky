@@ -17,6 +17,7 @@ function init(){
 
 function printItems(){
 	$("#data").html("");
+
 	for(var key in window.object){
 		var content = document.getElementById("data");
 	 	
@@ -31,7 +32,7 @@ function printItems(){
     var para = document.createElement("p");
     var button = document.createElement("button");
     var div_entry = document.createElement("div");
-    var div_text = document.createElement("div");
+    var div_task_content = document.createElement("div");
     var div_button = document.createElement("div");
 
     // Add javscript features to button element.
@@ -41,22 +42,31 @@ function printItems(){
     button.addEventListener('click', function(event) {clear_a_task(this.value)}, false);
     button.className = "class_clear_task_button";
     // Add javscript features to div_entry element.
-    div_text.id = "div_task_content";
+    div_task_content.id = "div_task_content";
     div_button.id = "div_flag_button";
     div_entry.id = "div_entry";
+
     // Arrange the sequence of all the elements.
     // Put textNode into paragraph element.
     // Put para and button into div_entry.
     // Lastly, put entry_div into "data" area.
     para.appendChild(text);
-    div_text.appendChild(para);
+    div_task_content.appendChild(para);
     div_button.appendChild(button);
     
-    div_entry.appendChild(div_text);
+    div_entry.appendChild(div_task_content);
     div_entry.appendChild(div_button);
     content.appendChild(div_entry);
 	}
+    
+    // Action on elements 
+    $( "[id = div_task_content]").on("click", function(){    
+        alert("mouseX");
+    });
+
  }
+
+
 
  function clear_a_task(value){
         delete window.object[value];
@@ -85,6 +95,10 @@ function add() {
         	printItems();
         }); 
 }
+
+function down(e){
+    console.log("hi there");
+};
 
 $("#add_task_button").click(function(){
 	 	add();
@@ -116,6 +130,9 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
     init();
   });
   }
+
+
+
 
 
 
