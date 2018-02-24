@@ -7,9 +7,9 @@
   	/*Define the size of the body*/
   	body{
   		margin:0px;
-  		width : 240px;
+  		width : 300px;
   		font-family: "Andale Mono", AndaleMono, monospace;
-  		font-size:14px;
+  		font-size:12px;
   	}
 
     /*Remove text input area border*/
@@ -21,7 +21,7 @@
     
 
     #text{
-      width:80px;
+      width:180px;
       height:100%;
     }
     #add{
@@ -74,13 +74,13 @@
   	#id_text {
       margin-left:10px;
   		display:inline-block;
-  		margin-right:50px; 
-  		width:140px; 
+  		margin-right:0px; 
+  		width:200px; 
   		/*background-color:red;*/
   	}
 
   	#id_button{
-  		margin-left:0px;
+  		margin-left:50px;
   		display:inline-block;
   		margin-right:0px; 
   		width:25px; 
@@ -88,7 +88,7 @@
   	}
 
     #div_add_button{
-      margin-left:0px;
+      margin-left:70px;
       display:inline-block;
       margin-right:0px; 
       width:25px; 
@@ -96,6 +96,7 @@
     #div_input{
       margin-left:6px;
       display:inline-block;
-      margin-right:62px; 
-      width:120px; 
+      margin-right:22px; 
+      width:150px;
+      background-color: red; 
     }

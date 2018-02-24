@@ -83,8 +83,7 @@ function add() {
         chrome.storage.sync.set(object, function() {
             // Notify that we saved.
         	printItems();
-        });
-        
+        }); 
 }
 
 $("#add").click(function(){
